@@ -22,6 +22,15 @@ platform :android do
       gradle_file_path: "./app/build.gradle"
     )
     gradle(task: "assembleRelease")
+    firebase_app_distribution(
+        app: "1:67078834811:android:15d23c909316f74e99f0de",
+        testers: "ansari.ahmed@live.com",
+        # testers: "shamshudein.syedkareem@cognizant.com , manikandan.k34a613@cognizant.com",
+        groups: "testers",
+        release_notes: "React Native Android App New Release",
+        firebase_cli_path: "/usr/local/bin/firebase",
+        firebase_cli_token: "1//0g_bWZ7sOAzZ5CgYIARAAGBASNwF-L9Ir9LpUBah--uO48uv5yTq1Ojhr1yZVYP4FnooRaRbhvZskOsJQnx62DFdz1rE60L-q9so"
+    )
   end
   
   
