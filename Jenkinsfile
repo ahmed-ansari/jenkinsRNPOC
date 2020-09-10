@@ -6,7 +6,7 @@ pipeline {
     environment {
         PATH = "/usr/local/bin:$PATH"
     }
-    tools {nodejs "node"}
+    tools {nodejs "NodeJS"}
     stages {
         stage('Test') {
             steps {
@@ -24,7 +24,7 @@ pipeline {
                     sh 'echo Android Build Started'
                     sh 'bundle install'
                     sh 'bundle update fastlane'
-                    sh 'bundle exec fastlane beta'
+                    sh 'bundle exec fastlane alpha'
                 }
             }
         }
