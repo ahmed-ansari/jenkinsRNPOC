@@ -21,7 +21,7 @@ pipeline {
                 sh 'npm install'
                 dir('android')
                 {
-                    sh 'souce ~/.bash_profile'
+                    sh 'source ~/.bash_profile'
                     sh 'echo Android Build Started'
                     sh 'bundle install'
                     sh 'bundle update fastlane'
